@@ -66,7 +66,7 @@ const honors = [
 export function Education() {
   const heading = useScrollReveal();
   const eduCards = useStaggerReveal(education.length, 0.1, 150);
-  const honorItems = useStaggerReveal(honors.length, 0.1, 100);
+  const honorItems = useStaggerReveal<HTMLUListElement>(honors.length, 0.1, 100);
   const score1 = useCountUp(1058, 1500);
   const score2 = useCountUp(1073, 1500);
 

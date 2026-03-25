@@ -9,6 +9,7 @@ interface CodeDrop {
   duration: number;
   char: string;
   opacity: number;
+  fontSize: number;
 }
 
 const CODE_CHARS = "01{}[]<>/=+*&|!?#@$%^~;:.,abcdefghijklmnopqrstuvwxyz";
@@ -26,6 +27,7 @@ export function CodeRain() {
         duration: 8 + Math.random() * 15,
         char: CODE_CHARS[Math.floor(Math.random() * CODE_CHARS.length)],
         opacity: 0.03 + Math.random() * 0.08,
+        fontSize: 10 + Math.random() * 6,
       });
     }
     setDrops(generated);
@@ -42,7 +44,7 @@ export function CodeRain() {
             animationDelay: `${drop.delay}s`,
             animationDuration: `${drop.duration}s`,
             opacity: drop.opacity,
-            fontSize: `${10 + Math.random() * 6}px`,
+            fontSize: `${drop.fontSize}px`,
           }}
         >
           {drop.char}

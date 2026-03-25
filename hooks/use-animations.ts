@@ -28,8 +28,12 @@ export function useScrollReveal(threshold = 0.15) {
 }
 
 // Stagger children animation
-export function useStaggerReveal(itemCount: number, threshold = 0.1, staggerMs = 80) {
-  const ref = useRef<HTMLDivElement>(null);
+export function useStaggerReveal<T extends HTMLElement = HTMLDivElement>(
+  itemCount: number,
+  threshold = 0.1,
+  staggerMs = 80
+) {
+  const ref = useRef<T | null>(null);
   const [visibleItems, setVisibleItems] = useState<boolean[]>(
     new Array(itemCount).fill(false)
   );
