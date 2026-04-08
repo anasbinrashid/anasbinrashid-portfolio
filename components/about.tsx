@@ -70,7 +70,7 @@ export function About() {
                 <span className="text-primary font-semibold hover:underline decoration-primary/50 underline-offset-4 transition-all cursor-default">
                   FAST NUCES, Islamabad
                 </span>
-                with hands-on experience across software development, AI/ML,
+                , with hands-on experience across software development, AI/ML,
                 and full-stack development. My passion lies in designing scalable, production-grade
                 software, optimizing performance, and applying advanced problem-solving to real-world challenges.
               </p>

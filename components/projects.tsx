@@ -8,7 +8,7 @@ const featuredProjects = [
   {
     title: "FinAI – AI-Powered Financial Platform",
     description:
-      "Final Year Project. Full-stack financial intelligence system for Pakistani banking products. React + Vite + TypeScript frontend; Node.js + Express API; MongoDB. Python FastAPI microservices for RAG, document simplification, and ML-based eligibility. Hybrid retrieval using FAISS + CLIP; Groq LLaMA 3.3 for advisory. Features: AI chatbot, document simplification, loan-eligibility scoring, bank matching, PDF export, dashboard. Secure architecture: JWT + rotating refresh tokens, rate limiting, field-level encryption, audit logs. Docker Compose deployment with CI/CD via GitHub Actions.",
+      "Final Year Project. Full-stack financial intelligence system for Pakistani banking products. React + Vite + TypeScript frontend; Node.js + Express API; MongoDB. Python FastAPI microservices for all modules. Hybrid retrieval using FAISS + CLIP; Groq LLaMA 3.3 for advisory. Features: AI chatbot, document simplification, loan-eligibility scoring, bank matching, PDF export, dashboard. Secure architecture: JWT + rotating refresh tokens, rate limiting, field-level encryption, audit logs. Docker Compose deployment with CI/CD via GitHub Actions.",
     tech: ["React", "TypeScript", "Node.js", "FastAPI", "MongoDB", "FAISS", "CLIP", "Docker"],
     github: "https://github.com/anasbinrashid",
     pseudoCode: "pipeline = FinAIPipeline(rag=HybridRAG(FAISS, CLIP))\nresult = pipeline.advise(user_query, bank_docs)",
