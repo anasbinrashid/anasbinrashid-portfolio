@@ -114,10 +114,9 @@ export function Hero() {
             <span className="text-muted-foreground/50 font-mono text-xs">{"* "}</span>
             A Computer Science student at{" "}
             <span className="text-primary font-semibold">FAST NUCES</span>{" "}
-            specializing in software development, data engineering, and network
-            systems, with hands-on experience in designing scalable
-            applications, optimizing performance, and building impactful,
-            future-ready solutions.
+            , with hands-on experience in software development, backend systems,
+            AI/ML, data engineering, and full-stack development. Passionate about building scalable,
+            production-grade software, optimizing performance, and applying advanced problem-solving to real-world challenges.
           </p>
           <p className="text-muted-foreground/50 font-mono text-xs mt-1">{" */"}</p>
         </div>

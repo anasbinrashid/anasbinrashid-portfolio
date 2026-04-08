@@ -19,7 +19,7 @@ const experiences = [
     duration: "Jan 2026 - Jun 2026",
     location: "Islamabad (Onsite)",
     description: [
-      "Assisted in teaching and managing the course through assignment design, demos, grading, and student support",
+      "Managed course logistics for 500+ students through assignment design, demos, grading, and student support",
       "Guided students in AI/ML concepts and algorithms",
     ],
     tabLabel: "AI TA",
@@ -43,7 +43,7 @@ const experiences = [
     duration: "Aug 2025 - Jan 2026",
     location: "Islamabad (Onsite)",
     description: [
-      "Assisted in teaching and managing the course through assignment design, demos, grading, and student support",
+      "Assisted in teaching and managing the course for 400+ students through assignment design, demos, grading, and student support",
       "Guided students in Android app development",
     ],
     tabLabel: "Mobile TA",
@@ -55,8 +55,8 @@ const experiences = [
     duration: "Jul 2025 - Aug 2025",
     location: "Islamabad (Onsite)",
     description: [
-      "Designed a RAG-based GitHub Repository Code Assistant using Python, ChromaDB, GitPython, Groq API, Llama Models and Streamlit",
-      "Implemented semantic search and context-aware response generation",
+      "Built a production RAG pipeline for codebase analysis with multi-language support, semantic search, and confidence scoring, reducing manual code review time",
+      "Deployed via Streamlit with session management and conversation history using Python, ChromaDB, GitPython, Groq API, Llama Models",
     ],
     tabLabel: "PTCL Group",
     branch: "feat/rag-pipeline",

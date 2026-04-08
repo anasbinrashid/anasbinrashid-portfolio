@@ -9,6 +9,8 @@ import {
   Cpu,
   Settings,
   Wrench,
+  Cloud,
+  Server,
 } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "@/hooks/use-animations";
 
@@ -18,23 +20,28 @@ const skillCategories = [
     icon: Code2,
     importPath: "@core/languages",
     skills: [
-      "C", "C++", "Java", "Python", "C#", "Kotlin", "x86 Assembly",
-      "JavaScript", "HTML/CSS", "XML",
+      "Python", "C", "C++", "Java", "C#", "Kotlin", "TypeScript", "JavaScript",
+      "PHP", "R", "x86 Assembly", "HTML/CSS", "MATLAB", "YAML",
     ],
   },
   {
     title: "Databases",
     icon: Database,
     importPath: "@data/stores",
-    skills: ["SQL Server", "MySQL", "MongoDB", "SQLite", "Firebase", "ChromaDB", "FAISS"],
+    skills: [
+      "SQL Server", "MySQL", "PostgreSQL", "MongoDB", "SQLite", "Redis",
+      "Firebase", "ChromaDB", "FAISS", "SQLAlchemy",
+    ],
   },
   {
     title: "Frameworks & Platforms",
     icon: Layout,
     importPath: "@tools/frameworks",
     skills: [
-      ".NET", "WinForms", "JavaFX", "SceneBuilder", "Android SDK",
-      "Streamlit", "Gradio", "SFML", "Tesseract", "EasyOCR",
+      "React", "Node.js", "Express.js", "FastAPI", "Flask", ".NET",
+      "Jetpack Compose", "Android SDK", "WinForms", "JavaFX",
+      "Streamlit", "Gradio", "Bootstrap", "TailwindCSS",
+      "Tesseract", "EasyOCR", "SFML",
     ],
   },
   {
@@ -43,9 +50,10 @@ const skillCategories = [
     importPath: "@ai/generative",
     skills: [
       "LLMs", "RAG", "Prompt Engineering", "LangChain", "Embeddings",
-      "Semantic Search", "Transformers", "BERT", "CLIP", "DiT", "GANs",
-      "Word2Vec", "Tokenization", "POS Tagging", "NER",
-      "Sequence Modeling", "Fine-Tuning (LoRA, PEFT)",
+      "Semantic Search", "Multimodal Analysis", "Transformers", "BERT", "CLIP",
+      "DiT", "GANs", "Word2Vec", "Tokenization", "POS Tagging", "NER",
+      "Text Classification", "Sequence Modeling", "Fine-Tuning (LoRA, PEFT)",
+      "HuggingFace", "Ollama",
     ],
   },
   {
@@ -54,7 +62,8 @@ const skillCategories = [
     importPath: "@ai/ml",
     skills: [
       "TensorFlow", "PyTorch", "Scikit-Learn", "NumPy", "Pandas",
-      "SciPy", "Feature Engineering", "Model Evaluation",
+      "SciPy", "Matplotlib", "Plotly", "Seaborn", "OpenCV",
+      "Feature Engineering", "Model Evaluation", "MLFlow", "Kaggle",
     ],
   },
   {
@@ -62,23 +71,36 @@ const skillCategories = [
     icon: Cpu,
     importPath: "@systems/hpc",
     skills: [
-      "OpenCL", "OpenMP", "SIMD", "CuPy", "Concurrency Control",
-      "Thread Management", "Performance Optimization",
+      "OpenCL", "OpenMP", "SIMD", "CuPy", "pthreads",
+      "Concurrency Control", "Thread Management", "Performance Optimization",
+    ],
+  },
+  {
+    title: "DevOps & Cloud",
+    icon: Cloud,
+    importPath: "@cloud/devops",
+    skills: [
+      "Docker", "Docker Compose", "Kubernetes", "AWS", "GitHub Actions",
+      "Jenkins", "Nginx", "Bash", "DVC", "Vercel",
     ],
   },
   {
     title: "Software Engineering",
     icon: Settings,
     importPath: "@eng/methods",
-    skills: ["SDLC", "Agile/SCRUM", "UML Design", "Unit Testing"],
+    skills: [
+      "SDLC", "Agile/SCRUM", "UML Design", "Unit Testing",
+      "REST API", "JWT", "OAuth", "Jira", "Trello",
+    ],
   },
   {
     title: "Tools & Environments",
     icon: Wrench,
     importPath: "@dev/tools",
     skills: [
-      "Git", "Visual Studio", "Eclipse", "Android Studio", "Ubuntu",
-      "MATLAB", "Cisco Packet Tracer", "Proteus",
+      "Git & GitHub", "Ubuntu", "Visual Studio", "Eclipse", "Android Studio",
+      "Jupyter Notebook", "Postman", "Figma", "Flex/Yacc",
+      "Cisco Packet Tracer", "Proteus", "Wireshark", "LaTeX",
     ],
   },
 ];

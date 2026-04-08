@@ -7,7 +7,7 @@ const education = [
   {
     institution: "FAST NUCES, Islamabad",
     degree: "Bachelor of Science | Computer Science",
-    duration: "Aug 2022 - Present",
+    duration: "Aug 2022 - Jun 2026",
     detail: "Current CGPA 3.72",
     highlight: true,
     query: "SELECT cgpa FROM results WHERE major = 'cs';",
@@ -40,6 +40,11 @@ const honors = [
     text: "Dean's List of Honors, FAST NUCES - Spring 2024, Fall 2023",
     icon: Award,
     tag: "DEAN",
+  },
+  {
+    text: "National Skills Competency Test, 99.6 Percentile - HEC",
+    icon: Trophy,
+    tag: "NSCT",
   },
   {
     text: "Honorary Award for Intermediate result, ICAP - Mar 2023",

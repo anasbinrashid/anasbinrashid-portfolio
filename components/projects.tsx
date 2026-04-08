@@ -6,78 +6,86 @@ import { useScrollReveal, useStaggerReveal, useTilt } from "@/hooks/use-animatio
 
 const featuredProjects = [
   {
-    title: "Multi-Document RAG & Intelligent Financial Analysis",
+    title: "FinAI – AI-Powered Financial Platform",
     description:
-      "Production-grade RAG pipeline for complex document understanding (PDF, Excel, CSV) with multimodal support using CLIP and Vision LLMs. Implemented hybrid image-text search, OCR fallback for scanned documents, and automatic citation generation with sub-millisecond query latency. Built evaluation framework for ROUGE, BLEU, and BERTScore metrics with a real-time Streamlit dashboard.",
-    tech: ["Python", "LangChain", "FAISS", "Groq", "CLIP", "EasyOCR"],
+      "Final Year Project. Full-stack financial intelligence system for Pakistani banking products. React + Vite + TypeScript frontend; Node.js + Express API; MongoDB. Python FastAPI microservices for RAG, document simplification, and ML-based eligibility. Hybrid retrieval using FAISS + CLIP; Groq LLaMA 3.3 for advisory. Features: AI chatbot, document simplification, loan-eligibility scoring, bank matching, PDF export, dashboard. Secure architecture: JWT + rotating refresh tokens, rate limiting, field-level encryption, audit logs. Docker Compose deployment with CI/CD via GitHub Actions.",
+    tech: ["React", "TypeScript", "Node.js", "FastAPI", "MongoDB", "FAISS", "CLIP", "Docker"],
+    github: "https://github.com/anasbinrashid",
+    pseudoCode: "pipeline = FinAIPipeline(rag=HybridRAG(FAISS, CLIP))\nresult = pipeline.advise(user_query, bank_docs)",
+  },
+  {
+    title: "Multi-Document Multimodal Financial Analysis",
+    description:
+      "Production-grade RAG pipeline for complex document understanding (PDF, Excel, CSV) with multimodal support using CLIP and Vision LLMs. Implemented hybrid image-text search, OCR fallback for scanned documents, and automatic citation generation with sub-millisecond query latency. Built evaluation framework for ROUGE, BLEU, and BERTScore metrics with a real-time Streamlit dashboard, deployed via Docker.",
+    tech: ["Python", "LangChain", "FAISS", "CLIP", "EasyOCR", "Docker"],
     github: "https://github.com/anasbinrashid",
     pseudoCode: "rag = RAGPipeline(docs, embeddings=FAISS)\nresponse = rag.query(user_input, top_k=5)",
   },
   {
-    title: "Generative AI & Autoregressive Image Modeling",
-    description:
-      "> Implemented Diffusion Transformers (DiT) with Representation Alignment (REPA/REG) to enhance training stability and convergence for image generation. > Built CycleGAN for unpaired photo-to-sketch translation using PatchGAN discriminators and mixed-precision (FP16) training. > Developed autoregressive models including PixelCNN, RowLSTM, and DiagonalBiLSTM for pixel-by-pixel image synthesis on CIFAR-10.",
-    tech: ["PyTorch", "TensorFlow", "DiT", "CycleGAN"],
-    github: "https://github.com/anasbinrashid",
-    pseudoCode: "model = DiffusionTransformer(dim=512, depth=12)\nloss = model.train(x_noisy, timesteps, noise)",
-  },
-  {
     title: "Neural Machine Translation & Semantic Search",
     description:
-      "> Built an English-to-Urdu NMT system featuring a custom Transformer with learnable positional encoding and fine-tuned mBART-50. > Designed a Semantic Product Search system using dual-encoder BERT embeddings and a neural relevance model for e-commerce reranking. Applied label smoothing, cosine annealing with warmup, and nucleus (top-p) sampling.",
-    tech: ["Transformers", "mBART-50", "BERT", "Flask", "Keras"],
+      "Built an English-to-Urdu NMT system featuring a custom Transformer with learnable positional encoding and fine-tuned mBART-50. Designed a Semantic Product Search system using dual-encoder BERT embeddings and a neural relevance model for e-commerce reranking. Applied label smoothing, cosine annealing with warmup, and nucleus (top-p) sampling.",
+    tech: ["Transformers", "mBART-50", "BERT", "PyTorch", "Flask"],
     github: "https://github.com/anasbinrashid",
     pseudoCode: "encoder_out = transformer.encode(src_tokens)\ntranslation = beam_search(decoder, encoder_out, k=5)",
+  },
+  {
+    title: "Generative AI & Autoregressive Image Modeling",
+    description:
+      "Implemented Diffusion Transformers (DiT) with Representation Alignment (REPA/REG) for training stability and image generation. Built CycleGAN for unpaired photo-to-sketch translation using PatchGAN discriminators and mixed-precision (FP16) training. Developed autoregressive models (PixelCNN, RowLSTM, DiagonalBiLSTM) for pixel-by-pixel image synthesis on CIFAR-10.",
+    tech: ["PyTorch", "TensorFlow", "DiT", "CycleGAN", "GANs"],
+    github: "https://github.com/anasbinrashid",
+    pseudoCode: "model = DiffusionTransformer(dim=512, depth=12)\nloss = model.train(x_noisy, timesteps, noise)",
   },
 ];
 
 const otherProjects = [
   {
-    title: "Legal NLP Pipeline & Sequence Modeling",
+    title: "NLP Pipeline & Advanced Sequence Modeling",
     description:
-      "> GPU-accelerated Legal Document NLP Pipeline using CBOW embeddings and extractive/abstractive summarization. > Built Shakespearean Next-Word Predictor with LSTM/GRU and Adaptive CNN for CIFAR-10.",
-    tech: ["SpaCy", "CuPy", "Word2Vec", "LSTM", "GRU"],
+      "GPU-accelerated Legal Document NLP Pipeline using CBOW embeddings and extractive/abstractive summarization. Built Shakespearean Next-Word Predictor with LSTM/GRU architectures, ablation study across 9 hyperparameter configs, and Adaptive CNN for CIFAR-10.",
+    tech: ["SpaCy", "CuPy", "Word2Vec", "LSTM", "GRU", "PyTorch"],
     github: "https://github.com/anasbinrashid",
   },
   {
-    title: "Intelligent Code Assistant",
+    title: "RAG-Based GitHub Code Assistant",
     description:
-      "RAG-based codebase analysis system with multi-language support and semantic search. Implemented intent analysis, query expansion, context-aware response generation, and confidence scoring.",
-    tech: ["Python", "ChromaDB", "Groq API", "Llama 3", "Streamlit"],
+      "RAG-based codebase analysis system with multi-language support and semantic search. Implemented intent analysis, query expansion, context-aware response generation, confidence scoring, and session management with conversation history.",
+    tech: ["Python", "ChromaDB", "Groq API", "Llama 3", "Streamlit", "GitPython"],
+    github: "https://github.com/anasbinrashid",
+  },
+  {
+    title: "Cryptanalysis & Secure Communication",
+    description:
+      "Security-focused system combining Al-Kindi cryptanalysis of affine cipher with Wireshark packet analysis, and an end-to-end encrypted chat app implementing AES, Diffie-Hellman, RSA, SHA, and PKI with full traffic analysis.",
+    tech: ["Python", "AES", "RSA", "Diffie-Hellman", "PKI", "Wireshark"],
     github: "https://github.com/anasbinrashid",
   },
   {
     title: "StudySync Mobile Application",
     description:
-      "Comprehensive Android application for student academic lifecycle management. Offline-first architecture with automatic cloud sync, course management, task tracking, and real-time data visualization.",
+      "Android app for student academic lifecycle management. Offline-first MVVM architecture with automatic Firebase cloud sync, course management, task tracking, resource organization, notification systems, and data visualization.",
     tech: ["Kotlin", "Firebase", "SQLite", "Material Design", "MVVM"],
-    github: "https://github.com/anasbinrashid",
-  },
-  {
-    title: "Custom Compiler Frontend",
-    description:
-      "Complete compiler frontend with lexical analysis and LL(1) parsing. Built tokenization engine with symbol table generation, NFA/DFA construction, and FIRST/FOLLOW computation with error recovery.",
-    tech: ["C++", "Compiler Theory", "Parsing", "Automata"],
     github: "https://github.com/anasbinrashid",
   },
   {
     title: "Parallel Computing Optimization Suite",
     description:
-      "Achieved 4x speedup using AVX intrinsics for matrix operations. Parallelized trigonometric computations with custom Taylor series using OpenMP. Built 8-thread system with CPU affinity optimization.",
+      "Achieved 4x speedup using AVX intrinsics for matrix transposition and multiplication. Parallelized trigonometric computations with custom Taylor series using OpenMP. Built 8-thread system with CPU affinity optimization using pthreads and OpenCL.",
     tech: ["C/C++", "OpenMP", "OpenCL", "SIMD", "pthreads"],
     github: "https://github.com/anasbinrashid",
   },
   {
     title: "Enterprise Network in Cisco Packet Tracer",
     description:
-      "Multi-layer enterprise network with NAT, DHCP, routing protocols (RIP, OSPF, EIGRP), and VPN for secure branch office and data center communication.",
-    tech: ["Cisco Packet Tracer", "Networking", "VPN", "OSPF"],
+      "Multi-layer enterprise network with NAT, DHCP, ACL, routing protocols (RIP, OSPF, EIGRP), and VPN for secure branch office and data center communication.",
+    tech: ["Cisco Packet Tracer", "Networking", "VPN", "OSPF", "EIGRP"],
     github: "https://github.com/anasbinrashid",
   },
   {
     title: "PetroPulse Management System",
     description:
-      "Full-fledged JavaFX application with SQL backend for petrol station operations including customer management, billing, employee schedules, and loyalty programs.",
+      "Full-fledged JavaFX application with SQL backend for petrol station operations including customer management, billing, employee schedules, maintenance logs, and loyalty programs with OOP design patterns.",
     tech: ["JavaFX", "MySQL", "OOP Patterns", "SceneBuilder"],
     github: "https://github.com/anasbinrashid",
   },
@@ -98,7 +106,7 @@ const otherProjects = [
   {
     title: "PACMAN in Assembly",
     description:
-      "Implementation of Pac-Man in x86 assembly language using Irvine Library. Features three levels with different layouts, portals, and challenges. Demonstrates low-level programming and hardware-software interaction.",
+      "Implementation of Pac-Man in x86 assembly language using Irvine Library. Features three levels with different layouts, portals, and challenges, demonstrating low-level programming and hardware-software interaction.",
     tech: ["x86 Assembly", "Irvine Library", "Low-Level"],
     github: "https://github.com/anasbinrashid",
   },
@@ -177,7 +185,7 @@ function FeaturedProjectCard({ project, index }: { project: (typeof featuredProj
           <p className="text-primary font-mono text-sm mb-2 flex items-center gap-2">
             {index % 2 === 1 ? null : <span className="flex-1" />}
             <Sparkles className="w-3.5 h-3.5" />
-            Featured Project
+            {index === 0 ? "Final Year Project" : "Featured Project"}
           </p>
           <h3 className="text-2xl font-bold text-foreground mb-4 hover:text-primary transition-colors">
             {project.title}
@@ -231,7 +239,7 @@ export function Projects() {
           <p className={`text-muted-foreground/30 font-mono text-xs mb-2 transition-all duration-500 ${
             heading.isVisible ? "opacity-100" : "opacity-0"
           }`}>
-            {"// section: projects"} 
+            {"// section: projects"}
           </p>
           <h2
             className={`flex items-center gap-4 text-2xl md:text-3xl font-bold text-foreground mb-12 transition-all duration-700 ${

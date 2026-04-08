@@ -16,7 +16,7 @@ export function About() {
   const heading = useScrollReveal();
   const content = useScrollReveal(0.1);
   const cards = useStaggerReveal(3, 0.1, 150);
-  const projectCount = useCountUp(13, 1500);
+  const projectCount = useCountUp(15, 1500);
   const cgpa = useCountUp(372, 1500);
 
   return (
@@ -59,21 +59,20 @@ export function About() {
               <div className="bg-card/50 border border-border rounded-lg p-4 font-mono text-sm">
                 <p className="text-muted-foreground/50">{"{"}</p>
                 <p className="pl-4"><span className="text-primary">{'"name"'}</span>: <span className="text-green-400/80">{'"Anas Bin Rashid"'}</span>,</p>
-                <p className="pl-4"><span className="text-primary">{'"role"'}</span>: <span className="text-green-400/80">{'"CS Student @ FAST NUCES"'}</span>,</p>
-                <p className="pl-4"><span className="text-primary">{'"focus"'}</span>: <span className="text-green-400/80">{'"Software Dev | Data Eng | AI"'}</span>,</p>
+                <p className="pl-4"><span className="text-primary">{'"role"'}</span>: <span className="text-green-400/80">{'"Final-Year CS Student @ FAST NUCES"'}</span>,</p>
+                <p className="pl-4"><span className="text-primary">{'"focus"'}</span>: <span className="text-green-400/80">{'"AI/ML | Full-Stack"'}</span>,</p>
                 <p className="pl-4"><span className="text-primary">{'"available"'}</span>: <span className="text-yellow-400/80">true</span></p>
                 <p className="text-muted-foreground/50">{"}"}</p>
               </div>
 
               <p>
-                I am a dedicated Computer Science student at{" "}
+                I am a Computer Science student at{" "}
                 <span className="text-primary font-semibold hover:underline decoration-primary/50 underline-offset-4 transition-all cursor-default">
                   FAST NUCES, Islamabad
                 </span>
-                , with hands-on experience across software development, AI & data
-                engineering, and network systems. My passion lies in designing
-                scalable applications, optimizing performance, and applying
-                advanced problem-solving to real-world challenges.
+                with hands-on experience across software development, AI/ML,
+                and full-stack development. My passion lies in designing scalable, production-grade
+                software, optimizing performance, and applying advanced problem-solving to real-world challenges.
               </p>
               <p>
                 Currently, I serve as an{" "}
@@ -88,8 +87,8 @@ export function About() {
                 <span className="text-primary font-semibold">
                   Applied AI & Data Engineering Intern
                 </span>{" "}
-                at PTCL Group, where I designed a RAG-based GitHub Repository
-                Code Assistant.
+                at PTCL Group, where I built a production RAG pipeline for codebase analysis
+                with semantic search, confidence scoring, and session management.
               </p>
 
               {/* import-style specialization list */}
@@ -183,7 +182,7 @@ export function About() {
               <p className="text-muted-foreground text-sm">
                 From Generative AI
                 <br />
-                to Software Development
+                to Full-Stack Systems
               </p>
             </div>
           </div>
